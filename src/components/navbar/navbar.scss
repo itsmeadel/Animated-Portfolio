@@ -2,7 +2,7 @@
     height: 100px;
 
     .wrapper{
-        max-width: 1250px;
+        max-width: 1190px;
         margin: auto;
         display: flex;
         align-items: center;
@@ -12,11 +12,12 @@
 
         span {
             font-weight: bold;
+            color: #F2E9E4;
         }
 
         .social{
             display: flex;
-            gap: 20px;
+            gap: 3px;
         }
 
         img{
@@ -38,7 +39,7 @@
 .box{
     width: 200px;
     height: 200px;
-    background-color: white;
+    background-color: #F2E9E4;
     
 }
 

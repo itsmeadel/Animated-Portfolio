@@ -1,11 +1,12 @@
 const variants = {
   open: {
     transition: {
-      staggeredChildren: 0.1,
+      staggerChildren: 0.1,
     },
   },
   closed: {
-    y: 0,
+    staggerChildren: 0.05,
+    straggerDirection: -1,
   },
 };
 import { motion } from "framer-motion";
@@ -27,7 +28,12 @@ export const Links = () => {
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
-        <motion.a href={`#${item}`} key={item} variants={itemVariants}>
+        <motion.a
+          href={`#${item}`}
+          key={item}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+        >
           {item}
         </motion.a>
       ))}
